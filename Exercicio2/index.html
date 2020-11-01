@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Exercicio 2</title>
+    <script src="funcoes.js"></script>
+</head>
+
+<body>
+    <div class="global">
+        <nav>
+            <a href="../Exercicio1/index.html">Exercício 1</a>
+            <a href="../index.html">Home</a>
+            <a href="index.html">Exercício 2</a>
+        </nav>
+        <article>
+            <form action="" id="myForm">
+                <div class="meinho">
+                    <div class="entrada">
+                        <p>Nome:</p>
+                        <input type="text" id="nome" name="entrada" placeholder="Ex.: Rogerio" class="entUser">
+                    </div>
+                    <div class="entrada">
+                        <p>RGM:</p>
+                        <input type="number" id="rgm" name="entrada" placeholder="Ex.:1112223/0" class="entUser">
+                    </div>
+                    <div class="entrada">
+                        <p>Nota parcial</p>
+                        <input type="number" id="notaParcial" class="entUser" name="entrada" placeholder="0 a 2">
+                    </div>
+                    <div class="entrada">
+                        <p>Nota exercicios</p>
+                        <input type="number" id="notaExercicios" class="entUser" name="entrada" placeholder="0 a 3">
+                    </div>
+                    <div class="entrada">
+                        <p>Nota regimental</p>
+                        <input type="number" id="notaProjeto" class="entUser" name="entrada" placeholder="0 a 5">
+                    </div>
+                    <div class="botoes">
+                        <input type="button" value="Cadastro" class="submit" id="register">
+                        <input type="button" value="Exibir" class="submit" id="exibir">
+                    </div>
+                </div>
+            </form>
+            <div class="impressao" id="impressao" style="display: none;">
+                <table id="info">
+                    <tr>
+                        <th>Nome</th>
+                        <th>RGM</th>
+                        <th>Nota Parcial</th>
+                        <th>Nota Projeto</th>
+                        <th>Nota Regimental</th>
+                        <th>Conceito Final</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="impressao" id="regis" style="display: none;">
+                <p>Aluno cadastrado (*￣3￣)╭</p>
+            </div>
+        </article>
+    </div>
+    <script src="eventos.js">
+    </script>
+</body>
+
+</html>
